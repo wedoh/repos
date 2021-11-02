@@ -1,0 +1,38 @@
+img
+{
+  width: 50%;
+  height: 200px;
+}
+
+$font-color: blue;
+
+.font-styling
+{
+  font-family: 'Open Sans', sans-serif;
+  color: $font-color;
+  text-align: center;
+}
+
+h1, h2, h3, p
+{
+  @extend .font-styling;
+  font-size: 1.5rem;
+}
+
+nav
+{
+  ul
+  {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+}
+
+@media (max-width: 768px)
+{
+  body
+  {
+    background-color: blue;
+  }
+}
